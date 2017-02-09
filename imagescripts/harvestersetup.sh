@@ -74,9 +74,9 @@ function crawlParameterizedLogFiles() {
   LOG_PATTERN_FILES=""
   SAVEIFS=$IFS
   IFS=' '
-  for (( i=0; i < ${#log_file_pattern}; i++ ))
+  for (( j=0; j < ${#log_file_pattern}; j++ ))
   do
-    pattern="${log_file_pattern[$i]}"
+    pattern="${log_file_pattern[$j]}"
     for d in ${log_dirs}
     do
       IFS=$'\n'
